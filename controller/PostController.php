@@ -43,7 +43,7 @@ class PostController extends BaseController
 	       
 	        if($name == '' || $text == ''){
 
-	        	$msg = 'Заполните все поля'; // Если поля пустые объявляем переменную $msg
+	        	$msg = 'Заполните все поля'; 
 	        }
 
 	        else {
@@ -63,7 +63,7 @@ class PostController extends BaseController
 		
 		$this->title .= '::добавить страницу';
 		//$this->rightBlock = '';
-		$this->content = $this->render('add.php', ['name' => $name, 'text' => $text, 'msg' => $msg]); // $msg передаем в шаблон add.php
+		$this->content = $this->render('add.php', ['name' => $name, 'text' => $text, 'msg' => $msg]); 
 		
 	}
 

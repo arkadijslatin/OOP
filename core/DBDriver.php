@@ -3,6 +3,9 @@ namespace core;
 
 class DBDriver implements DBDriverInterface 
 {
+	const FETCH_ONE = 0; // Добавляем константы. Если из БД нужна одна запись, то FETCH_ONE т.е. 0, а если все, то FETCH_ALL т.е. 1.
+	const FETCH_ALL = 1;
+
 	private $pdo; 
 	public $id; 
 
@@ -13,31 +16,33 @@ class DBDriver implements DBDriverInterface
 		
 	}
 
-	public function Query($sql)
+	public function Query($sql, array $obj = [], $fetch = self::FETCH_ALL) // В данный метод мы передаем константу по умолчанию FETCH_ALL т.е. 1.
 	{
-		$q = $this->pdo->prepare($sql); 
-		$q->execute(); 
+		$q = $this->pdo->prepare($sql);
+		$q->execute($obj);
+		
+		/* Данные проверки уже не нужны, т.к. все уже сделано на Exception
+		if($q->errorCode() != \PDO::ERR_NONE){ 
+			$info = $q->errorInfo();
+			die($info[2]);
+		}*/
 
-        if($q->errorCode() != \PDO::ERR_NONE) { 
-        	$info = $q->errorInfo();
-            exit($info[2]); 
-        }
-
-          return $q->fetchAll(); 
-    }
+		return $fetch === self::FETCH_ALL ? $q->fetchAll() : $q->fetch(); // Если в метод передали FETCH_ALL, то выполняем fetchAll(), т.е. все записи из базы, а иначе выполняем fetch(), т.е. одну запись из базы.
+	}
     	                    
-	public function Insert($table, array $obj)
+	public function Insert($table, array $obj) 
 	{
 		
-		$columns = []; 
+		$columns = []; // Создаем два свойства в виде массива.
 		$masks = []; 
 		
-		foreach ($obj as $key => $value) { 
-			$columns[] = $key; 
-			$masks[] = ":$key"; 
+		foreach ($obj as $key => $value) { // После цикла получаем
+			$columns[] = $key; // name
+			$masks[] = ":$key"; // :name
 
-			if ($value === null) {  
-				$obj[$key] = 'NULL'; 
+        
+			if ($value === null) {  // Если массив пустой
+				$obj[$key] = 'NULL'; // В БД будет занесено 'NULL'
 			}
 		}
 
@@ -48,10 +53,10 @@ class DBDriver implements DBDriverInterface
 		$q = $this->pdo->prepare($query); 
 		$q->execute($obj); 
 
-		if($q->errorCode() != \PDO::ERR_NONE) { 
+		/*if($q->errorCode() != \PDO::ERR_NONE) { 
         	$info = $q->errorInfo();
             exit($info[2]);
-        }
+        }*/
 
         return $this->pdo->lastInsertId();
     }
@@ -75,10 +80,10 @@ class DBDriver implements DBDriverInterface
 		$q = $this->pdo->prepare($query); 
 		$q->execute($obj); 
 
-		if($q->errorCode() != \PDO::ERR_NONE) { 
+		/*if($q->errorCode() != \PDO::ERR_NONE) { 
         	$info = $q->errorInfo();
             exit($info[2]);
-        }
+        }*/
 
         return $q->rowCount(); 
     }
@@ -90,10 +95,10 @@ class DBDriver implements DBDriverInterface
         $q = $this->pdo->prepare($query);
         $q->execute();
 
-        if($q->errorCode() != \PDO::ERR_NONE) { 
+        /*if($q->errorCode() != \PDO::ERR_NONE) { 
         	$info = $q->errorInfo();
             exit($info[2]);
-        }
+        }*/
 
         return $q->rowCount();
     }

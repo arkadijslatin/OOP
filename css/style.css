@@ -12,6 +12,18 @@ body {
 .head {
   text-align: center;
 }
+.name {
+  margin-left: 850px;
+}
+.name span {
+  text-transform: capitalize;
+}
+.registration {
+  margin-left: 850px;
+}
+.registration a {
+  text-decoration: none;
+}
 .content {
   border: 1px solid #fbfbfb;
   width: 800px;
@@ -76,4 +88,7 @@ body {
 }
 .add span {
   font-size: 24px;
+}
+.error {
+  margin-left: 50px;
 }

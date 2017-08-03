@@ -1,0 +1,1 @@
+browser-sync start --proxy "myproject.dev" --files "php/*.php,css/*.css,js/*.js,html/*.html,*.*"

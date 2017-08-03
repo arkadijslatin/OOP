@@ -12,7 +12,12 @@
             </li>  <br>          
         <?endforeach?>
     </ul> 
+    <h2><?= $article; ?></h2>
+   
+    <? if ($this->entrance): ?>
+    
     <a href="/post/add" >Добавить</a> &nbsp;
+    <? endif ?>
 </div> 
 
 

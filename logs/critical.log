@@ -1,0 +1,316 @@
+
+
+Date: 2017-07-19 10:26:02
+Level: ERROR
+Text: Error Bad Request
+#0 C:\OpenServer\domains\lesson3-2\core\User.php(28): model\BaseModel->insert(Array)
+#1 C:\OpenServer\domains\lesson3-2\controller\UserController.php(29): core\User->registration(Array)
+#2 C:\OpenServer\domains\lesson3-2\core\Application.php(39): controller\UserController->regAction()
+#3 C:\OpenServer\domains\lesson3-2\index.php(7): core\Application->run()
+#4 {main}
+*****************
+
+Date: 2017-07-19 10:29:32
+Level: ERROR
+Text: Error Bad Request
+#0 C:\OpenServer\domains\lesson3-2\core\User.php(28): model\BaseModel->insert(Array)
+#1 C:\OpenServer\domains\lesson3-2\controller\UserController.php(29): core\User->registration(Array)
+#2 C:\OpenServer\domains\lesson3-2\core\Application.php(39): controller\UserController->regAction()
+#3 C:\OpenServer\domains\lesson3-2\index.php(7): core\Application->run()
+#4 {main}
+*****************
+
+Date: 2017-07-19 10:31:56
+Level: ERROR
+Text: Error Bad Request
+#0 C:\OpenServer\domains\lesson3-2\core\User.php(28): model\BaseModel->insert(Array)
+#1 C:\OpenServer\domains\lesson3-2\controller\UserController.php(29): core\User->registration(Array)
+#2 C:\OpenServer\domains\lesson3-2\core\Application.php(39): controller\UserController->regAction()
+#3 C:\OpenServer\domains\lesson3-2\index.php(7): core\Application->run()
+#4 {main}
+*****************
+
+Date: 2017-07-19 10:36:49
+Level: ERROR
+Text: Error Bad Request
+#0 C:\OpenServer\domains\lesson3-2\core\User.php(28): model\BaseModel->insert(Array)
+#1 C:\OpenServer\domains\lesson3-2\controller\UserController.php(29): core\User->registration(Array)
+#2 C:\OpenServer\domains\lesson3-2\core\Application.php(39): controller\UserController->regAction()
+#3 C:\OpenServer\domains\lesson3-2\index.php(7): core\Application->run()
+#4 {main}
+*****************
+
+Date: 2017-07-19 10:37:31
+Level: ERROR
+Text: Error Bad Request
+#0 C:\OpenServer\domains\lesson3-2\core\User.php(28): model\BaseModel->insert(Array)
+#1 C:\OpenServer\domains\lesson3-2\controller\UserController.php(29): core\User->registration(Array)
+#2 C:\OpenServer\domains\lesson3-2\core\Application.php(39): controller\UserController->regAction()
+#3 C:\OpenServer\domains\lesson3-2\index.php(7): core\Application->run()
+#4 {main}
+*****************
+
+Date: 2017-07-22 10:24:39
+Level: ERROR
+Text: SQLSTATE[HY000] [1049] Unknown database 'phpchat1'
+#0 C:\OpenServer\domains\lesson3-3\core\DB.php(26): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 C:\OpenServer\domains\lesson3-3\core\DB.php(12): core\DB::connect()
+#2 C:\OpenServer\domains\lesson3-3\controller\PostController.php(20): core\DB::get()
+#3 C:\OpenServer\domains\lesson3-3\core\Application.php(39): controller\PostController->indexAction()
+#4 C:\OpenServer\domains\lesson3-3\index.php(7): core\Application->run()
+#5 {main}
+*****************
+
+Date: 2017-07-22 10:29:35
+Level: ERROR
+Text: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'phpchat1.users' doesn't exist
+#0 C:\OpenServer\domains\lesson3-3\core\DBDriver.php(19): PDOStatement->execute(Array)
+#1 C:\OpenServer\domains\lesson3-3\model\UserModel.php(47): core\DBDriver->Query('SELECT * FROM u...', Array)
+#2 C:\OpenServer\domains\lesson3-3\core\User.php(20): model\UserModel->getByLogin('')
+#3 C:\OpenServer\domains\lesson3-3\controller\UserController.php(31): core\User->registration(Array)
+#4 C:\OpenServer\domains\lesson3-3\core\Application.php(39): controller\UserController->regAction()
+#5 C:\OpenServer\domains\lesson3-3\index.php(7): core\Application->run()
+#6 {main}
+*****************
+
+Date: 2017-07-23 10:39:30
+Level: ERROR
+Text: User with login  not found.
+#0 C:\OpenServer\domains\lesson3-3\controller\UserController.php(93): core\User->login(Array)
+#1 C:\OpenServer\domains\lesson3-3\core\Application.php(41): controller\UserController->loginAction()
+#2 C:\OpenServer\domains\lesson3-3\index.php(7): core\Application->run()
+#3 {main}
+*****************
+
+Date: 2017-07-23 10:39:45
+Level: ERROR
+Text: User with login  not found.
+#0 C:\OpenServer\domains\lesson3-3\controller\UserController.php(93): core\User->login(Array)
+#1 C:\OpenServer\domains\lesson3-3\core\Application.php(41): controller\UserController->loginAction()
+#2 C:\OpenServer\domains\lesson3-3\index.php(7): core\Application->run()
+#3 {main}
+*****************
+
+Date: 2017-07-23 10:40:39
+Level: ERROR
+Text: Пользователя с логином  не существует.
+#0 C:\OpenServer\domains\lesson3-3\controller\UserController.php(93): core\User->login(Array)
+#1 C:\OpenServer\domains\lesson3-3\core\Application.php(41): controller\UserController->loginAction()
+#2 C:\OpenServer\domains\lesson3-3\index.php(7): core\Application->run()
+#3 {main}
+*****************
+
+Date: 2017-07-23 10:41:35
+Level: ERROR
+Text: Пользователя с логином  не существует.
+#0 C:\OpenServer\domains\lesson3-3\controller\UserController.php(93): core\User->login(Array)
+#1 C:\OpenServer\domains\lesson3-3\core\Application.php(41): controller\UserController->loginAction()
+#2 C:\OpenServer\domains\lesson3-3\index.php(7): core\Application->run()
+#3 {main}
+*****************
+
+Date: 2017-07-23 10:41:40
+Level: ERROR
+Text: Пользователя с логином  не существует.
+#0 C:\OpenServer\domains\lesson3-3\controller\UserController.php(93): core\User->login(Array)
+#1 C:\OpenServer\domains\lesson3-3\core\Application.php(41): controller\UserController->loginAction()
+#2 C:\OpenServer\domains\lesson3-3\index.php(7): core\Application->run()
+#3 {main}
+*****************
+
+Date: 2017-07-23 13:00:12
+Level: ERROR
+Text: Error Bad Request
+#0 C:\OpenServer\domains\lesson3-3\core\User.php(76): model\BaseModel->insert(Array)
+#1 C:\OpenServer\domains\lesson3-3\controller\UserController.php(92): core\User->login()
+#2 C:\OpenServer\domains\lesson3-3\core\Application.php(41): controller\UserController->loginAction()
+#3 C:\OpenServer\domains\lesson3-3\index.php(7): core\Application->run()
+#4 {main}
+*****************
+
+Date: 2017-07-23 15:37:07
+Level: ERROR
+Text: Error Bad Request
+#0 C:\Openserver\OpenServer\domains\lesson3-3\core\User.php(76): model\BaseModel->insert(Array)
+#1 C:\Openserver\OpenServer\domains\lesson3-3\controller\UserController.php(92): core\User->login()
+#2 C:\Openserver\OpenServer\domains\lesson3-3\core\Application.php(41): controller\UserController->loginAction()
+#3 C:\Openserver\OpenServer\domains\lesson3-3\index.php(7): core\Application->run()
+#4 {main}
+*****************
+
+Date: 2017-07-30 07:28:07
+Level: ERROR
+Text: SQLSTATE[HY000] [1049] Unknown database 'phpchat1'
+#0 C:\OpenServer\domains\lesson3-3\core\DB.php(26): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 C:\OpenServer\domains\lesson3-3\core\DB.php(12): core\DB::connect()
+#2 C:\OpenServer\domains\lesson3-3\controller\PostController.php(20): core\DB::get()
+#3 C:\OpenServer\domains\lesson3-3\core\Application.php(41): controller\PostController->indexAction()
+#4 C:\OpenServer\domains\lesson3-3\index.php(7): core\Application->run()
+#5 {main}
+*****************
+
+Date: 2017-07-30 07:28:20
+Level: ERROR
+Text: SQLSTATE[HY000] [1049] Unknown database 'phpchat1'
+#0 C:\OpenServer\domains\lesson3-3\core\DB.php(26): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 C:\OpenServer\domains\lesson3-3\core\DB.php(12): core\DB::connect()
+#2 C:\OpenServer\domains\lesson3-3\controller\PostController.php(20): core\DB::get()
+#3 C:\OpenServer\domains\lesson3-3\core\Application.php(41): controller\PostController->indexAction()
+#4 C:\OpenServer\domains\lesson3-3\index.php(7): core\Application->run()
+#5 {main}
+*****************
+
+Date: 2017-07-31 07:19:23
+Level: ERROR
+Text: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'phpchat1.messages' doesn't exist
+#0 C:\OpenServer\domains\lesson3-3\core\DBDriver.php(19): PDOStatement->execute(Array)
+#1 C:\OpenServer\domains\lesson3-3\model\BaseModel.php(43): core\DBDriver->Query('SELECT * FROM m...')
+#2 C:\OpenServer\domains\lesson3-3\controller\PostController.php(23): model\BaseModel->getAll()
+#3 C:\OpenServer\domains\lesson3-3\core\Application.php(41): controller\PostController->indexAction()
+#4 C:\OpenServer\domains\lesson3-3\index.php(7): core\Application->run()
+#5 {main}
+*****************
+
+Date: 2017-07-31 07:51:27
+Level: ERROR
+Text: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'phpchat1.messages' doesn't exist
+#0 C:\OpenServer\domains\lesson3-3\core\DBDriver.php(19): PDOStatement->execute(Array)
+#1 C:\OpenServer\domains\lesson3-3\model\BaseModel.php(43): core\DBDriver->Query('SELECT * FROM m...')
+#2 C:\OpenServer\domains\lesson3-3\controller\PostController.php(23): model\BaseModel->getAll()
+#3 C:\OpenServer\domains\lesson3-3\core\Application.php(41): controller\PostController->indexAction()
+#4 C:\OpenServer\domains\lesson3-3\index.php(7): core\Application->run()
+#5 {main}
+*****************
+
+Date: 2017-07-31 07:51:28
+Level: ERROR
+Text: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'phpchat1.messages' doesn't exist
+#0 C:\OpenServer\domains\lesson3-3\core\DBDriver.php(19): PDOStatement->execute(Array)
+#1 C:\OpenServer\domains\lesson3-3\model\BaseModel.php(43): core\DBDriver->Query('SELECT * FROM m...')
+#2 C:\OpenServer\domains\lesson3-3\controller\PostController.php(23): model\BaseModel->getAll()
+#3 C:\OpenServer\domains\lesson3-3\core\Application.php(41): controller\PostController->indexAction()
+#4 C:\OpenServer\domains\lesson3-3\index.php(7): core\Application->run()
+#5 {main}
+*****************
+
+Date: 2017-07-31 12:14:58
+Level: ERROR
+Text: Error Bad Request
+#0 C:\OpenServer\domains\lesson3-3\core\User.php(76): model\BaseModel->insert(Array)
+#1 C:\OpenServer\domains\lesson3-3\controller\UserController.php(92): core\User->login()
+#2 C:\OpenServer\domains\lesson3-3\core\Application.php(43): controller\UserController->loginAction()
+#3 C:\OpenServer\domains\lesson3-3\index.php(7): core\Application->run()
+#4 {main}
+*****************
+
+Date: 2017-07-31 12:21:54
+Level: ERROR
+Text: Error Bad Request
+#0 C:\OpenServer\domains\lesson3-3\core\User.php(76): model\BaseModel->insert(Array)
+#1 C:\OpenServer\domains\lesson3-3\controller\UserController.php(92): core\User->login()
+#2 C:\OpenServer\domains\lesson3-3\core\Application.php(43): controller\UserController->loginAction()
+#3 C:\OpenServer\domains\lesson3-3\index.php(7): core\Application->run()
+#4 {main}
+*****************
+
+Date: 2017-07-31 12:23:06
+Level: ERROR
+Text: Error Bad Request
+#0 C:\OpenServer\domains\lesson3-3\core\User.php(76): model\BaseModel->insert(Array)
+#1 C:\OpenServer\domains\lesson3-3\controller\UserController.php(92): core\User->login()
+#2 C:\OpenServer\domains\lesson3-3\core\Application.php(43): controller\UserController->loginAction()
+#3 C:\OpenServer\domains\lesson3-3\index.php(7): core\Application->run()
+#4 {main}
+*****************
+
+Date: 2017-08-01 10:24:11
+Level: ERROR
+Text: Error Bad Request
+#0 C:\Openserver\domains\lesson3-3\core\User.php(78): model\BaseModel->insert(Array)
+#1 C:\Openserver\domains\lesson3-3\controller\UserController.php(92): core\User->login()
+#2 C:\Openserver\domains\lesson3-3\core\Application.php(43): controller\UserController->loginAction()
+#3 C:\Openserver\domains\lesson3-3\index.php(7): core\Application->run()
+#4 {main}
+*****************
+
+Date: 2017-08-01 10:24:46
+Level: ERROR
+Text: Error Bad Request
+#0 C:\Openserver\domains\lesson3-3\core\User.php(78): model\BaseModel->insert(Array)
+#1 C:\Openserver\domains\lesson3-3\controller\UserController.php(92): core\User->login()
+#2 C:\Openserver\domains\lesson3-3\core\Application.php(43): controller\UserController->loginAction()
+#3 C:\Openserver\domains\lesson3-3\index.php(7): core\Application->run()
+#4 {main}
+*****************
+
+Date: 2017-08-01 10:24:50
+Level: ERROR
+Text: Error Bad Request
+#0 C:\Openserver\domains\lesson3-3\core\User.php(78): model\BaseModel->insert(Array)
+#1 C:\Openserver\domains\lesson3-3\controller\UserController.php(92): core\User->login()
+#2 C:\Openserver\domains\lesson3-3\core\Application.php(43): controller\UserController->loginAction()
+#3 C:\Openserver\domains\lesson3-3\index.php(7): core\Application->run()
+#4 {main}
+*****************
+
+Date: 2017-08-01 10:25:02
+Level: ERROR
+Text: Error Bad Request
+#0 C:\Openserver\domains\lesson3-3\core\User.php(78): model\BaseModel->insert(Array)
+#1 C:\Openserver\domains\lesson3-3\controller\UserController.php(92): core\User->login()
+#2 C:\Openserver\domains\lesson3-3\core\Application.php(43): controller\UserController->loginAction()
+#3 C:\Openserver\domains\lesson3-3\index.php(7): core\Application->run()
+#4 {main}
+*****************
+
+Date: 2017-08-01 10:25:55
+Level: ERROR
+Text: Error Bad Request
+#0 C:\Openserver\domains\lesson3-3\core\User.php(78): model\BaseModel->insert(Array)
+#1 C:\Openserver\domains\lesson3-3\controller\UserController.php(92): core\User->login()
+#2 C:\Openserver\domains\lesson3-3\core\Application.php(43): controller\UserController->loginAction()
+#3 C:\Openserver\domains\lesson3-3\index.php(7): core\Application->run()
+#4 {main}
+*****************
+
+Date: 2017-08-01 10:26:08
+Level: ERROR
+Text: Error Bad Request
+#0 C:\Openserver\domains\lesson3-3\core\User.php(78): model\BaseModel->insert(Array)
+#1 C:\Openserver\domains\lesson3-3\controller\UserController.php(92): core\User->login()
+#2 C:\Openserver\domains\lesson3-3\core\Application.php(43): controller\UserController->loginAction()
+#3 C:\Openserver\domains\lesson3-3\index.php(7): core\Application->run()
+#4 {main}
+*****************
+
+Date: 2017-08-01 10:26:49
+Level: ERROR
+Text: Error Bad Request
+#0 C:\Openserver\domains\lesson3-3\core\User.php(78): model\BaseModel->insert(Array)
+#1 C:\Openserver\domains\lesson3-3\controller\UserController.php(92): core\User->login()
+#2 C:\Openserver\domains\lesson3-3\core\Application.php(43): controller\UserController->loginAction()
+#3 C:\Openserver\domains\lesson3-3\index.php(7): core\Application->run()
+#4 {main}
+*****************
+
+Date: 2017-08-01 10:27:01
+Level: ERROR
+Text: Error Bad Request
+#0 C:\Openserver\domains\lesson3-3\core\User.php(78): model\BaseModel->insert(Array)
+#1 C:\Openserver\domains\lesson3-3\controller\UserController.php(92): core\User->login()
+#2 C:\Openserver\domains\lesson3-3\core\Application.php(43): controller\UserController->loginAction()
+#3 C:\Openserver\domains\lesson3-3\index.php(7): core\Application->run()
+#4 {main}
+*****************
+
+Date: 2017-08-01 14:47:22
+Level: ERROR
+Text: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_id' in 'field list'
+#0 C:\Openserver\domains\lesson3-3\core\DBDriver.php(54): PDOStatement->execute(Array)
+#1 C:\Openserver\domains\lesson3-3\model\BaseModel.php(63): core\DBDriver->Insert('session', Array)
+#2 C:\Openserver\domains\lesson3-3\core\User.php(74): model\BaseModel->insert(Array)
+#3 C:\Openserver\domains\lesson3-3\controller\UserController.php(92): core\User->login()
+#4 C:\Openserver\domains\lesson3-3\core\Application.php(43): controller\UserController->loginAction()
+#5 C:\Openserver\domains\lesson3-3\index.php(7): core\Application->run()
+#6 {main}
+*****************
